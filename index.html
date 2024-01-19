@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./main.css">
+	<link rel="shortcut icon" href="/imagem/favicon.ico" type="image/x-icon">
+	<title>Agenda telefonica</title>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1 class="title">
+				Agenda telefonica
+			</h1>
+			<div class="fundo">
+				<img class="icon" src="./imagem/agendatelefonica.png.png" alt="agendatelefonica">
+			</div>
+		</header>
+		<div class="form-container">
+			<form id="form-contatos">
+				<input type="text" name="nome" id="nome" required="" placeholder="Digite o primeiro nome do contato">
+				<input type="text" name="sobrenome" id="sobrenome" required="" placeholder="Digite o sobrenome do contato">
+				<input type="tel" name="telefone" id="telefone" required="" placeholder="Digite o número de telefone">
+				<input type="email" name="email" id="email" required="" placeholder="Digite o e-mail do seu contato">
+				<div class="buttons">
+					<button type="submit">Salvar</button>
+					<button type="reset">Limpar</button>
+					<button type="reser">Apagar tudos os contatos</button>
+				</div>
+			</form>
+			<table cellspacing="0">
+				<thead>
+					<tr>
+						<th>nome</th>
+						<th>sobrenome</th>
+						<th>telefone</th>
+						<th>email</th>
+					</tr>
+				</thead>
+				<tbody class="tbody"></tbody>
+			</table>
+		</div>
+		<tfoot class="footer">
+			@pedrovive | Apenas mais um teste para aprender mais
+		</tfoot>
+	</div>
+	<script src="/main.js"></script>
+</body>
+</html>
